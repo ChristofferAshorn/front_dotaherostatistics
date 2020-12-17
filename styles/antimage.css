@@ -1,0 +1,853 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100%;
+}
+
+/* Texts */
+
+@import url(//db.onlinewebfonts.com/c/3dd6e9888191722420f62dd54664bc94?family=Myriad+Pro);
+
+h1, h2, h3, a, span {
+    color: #e6e7eb;
+    font-family: "Myriad Pro";
+}
+
+h1 {
+    font-size: 26pt;
+}
+
+h2 {
+    font-size: 20px;
+}
+
+h3 {
+    font-size: 16px;
+}
+
+a {
+    font-size: 1rem;
+}
+
+
+.root {
+    height: fit-content;
+    /* background: linear-gradient(to bottom right, #093A0A, #010B01); */
+    /* background: linear-gradient(to bottom right, #335C31, #335C31); */
+    background: linear-gradient(to bottom right, #1B1C21,#232329);
+    z-index: 5;
+}
+
+/* Main hero image and text box */
+
+.image-container {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    
+    /*
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    */
+    height: 800px;
+    width: 75%;
+    background: url(/ressources/images/heropages/anti-mage/anti-mage-icon.png) no-repeat center;
+    background-size: cover;
+    border-radius: 10px;
+    z-index: 10;
+    border: 2px solid #335C31;
+    box-shadow: 10px 10px 8px #1f1f1f;
+}
+
+.text-box-container {
+    position: absolute;
+    height: 50%;
+    width: 80%;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0.8;
+    /* background: linear-gradient(to left, #1B1C21, #232329); */
+    background: linear-gradient(to left, #335C31, #335C31);
+
+}
+
+.text-box-headline {
+    position: absolute;
+    top: 7%;
+    left: 7%;
+}
+
+.text-box-roles {
+    position: absolute;
+    top: 8%;
+    right: 5%;
+}
+
+.text-box-text {
+    position: absolute;
+    left: 7%;
+    right: 5%;
+    top: 25%;
+    line-height: 24px;
+}
+
+/* Abilities, Talents, Attributes and Stats */
+
+.abilities-attributes-main-container {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 7%;
+
+    /*
+    left: 50%;
+    top: 125%;
+    transform: translate(-50%, -50%);
+    */
+    background: linear-gradient(to left, #1B1C21, #232329);
+    /* background: linear-gradient(to left, #335C31, #335C31); */
+    width: 75%;
+    height: 300px;
+    border-radius: 10px;
+    border: 2px solid #335C31;
+    box-shadow: 10px 10px 8px #1f1f1f;
+    z-index: 10;
+
+}
+/* Abilities, Talents */
+
+.abilities-talents-container {
+    position: absolute;
+    height: 80%;
+    width: 66%;
+    left: 0;
+    top: 30px;
+}
+
+.abilities-talents-headline {
+    text-align: center;
+}
+
+.abilities-talents-icon-container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: right;
+    justify-content: space-between;
+    width: 100%;
+    height: auto;
+    padding-top: 3%;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+
+.abilities-1 {
+    background: url("/ressources/images/heropages/anti-mage/anti-mage-manabreak.png");
+    background-size: contain;
+    height: 128px;
+    width: 128px;
+}
+
+.abilities-1:hover {
+    border-radius: 20px;
+    box-shadow: 0px 0px 20px 10px #fff;
+    transform: scale(1.10);
+    transition: 0.3s ease-in;
+}
+
+.abilities-1:hover .tooltip {
+    transition: ease-in 0.3s all;
+    visibility: visible;
+    cursor: help;
+}
+
+.abilities-2 {
+    background: url("/ressources/images/heropages/anti-mage/anti-mage-blink.png");
+    background-size: contain;
+    height: 128px;
+    width: 128px;
+}
+
+.abilities-2:hover {
+    border-radius: 20px;
+    box-shadow: 0px 0px 20px 10px #fff;
+    transform: scale(1.10);
+    transition: 0.3s ease-in;
+    cursor: help;
+}
+
+.abilities-2:hover .tooltip {
+    transition: ease-in 0.3s all;
+    visibility: visible;
+}
+
+.abilities-3 {
+    background: url("/ressources/images/heropages/anti-mage/anti-mage-counterspell.png");
+    background-size: contain;
+    height: 128px;
+    width: 128px;
+}
+
+.abilities-3:hover {
+    border-radius: 20px;
+    box-shadow: 0px 0px 20px 10px #fff;
+    transform: scale(1.10);
+    transition: 0.3s ease-in;
+    cursor: help;
+}
+
+.abilities-3:hover .tooltip {
+    transition: ease-in 0.3s all;
+    visibility: visible;
+}
+
+.abilities-4 {
+    background: url("/ressources/images/heropages/anti-mage/anti-mage-mana-void.png");
+    background-size: contain;
+    height: 128px;
+    width: 128px;
+}
+
+.abilities-4:hover {
+    border-radius: 20px;
+    box-shadow: 0px 0px 20px 10px #fff;
+    transform: scale(1.10);
+    transition: 0.3s ease-in;
+    cursor: help;
+}
+
+.abilities-4:hover .tooltip {
+    transition: ease-in 0.3s all;
+    visibility: visible;
+}
+
+.talents {
+    background:url(/ressources/images/heropages/talent_tree.svg);
+    height: 128px;
+    width: 128px;
+}
+
+.talents:hover {
+    transform: scale(1.10);
+    background:url(/ressources/images/heropages/talent_tree_hover.svg);
+    transition: 0.3s ease-in;
+    cursor: help;
+}
+
+.talents:hover .talent-tree {
+    visibility: visible;
+}
+
+/* Tool Tips */
+.tooltip {
+    position: absolute;
+    top: 100%;
+    left: 1;
+    width: 350px;
+    margin-top: 7%;
+    height: fit-content;
+    border: 2px solid black;
+    border-radius: 8px;
+    /* background-color: #232329; */
+    background: radial-gradient(#11181D, #151C20);
+    box-shadow: 10px 10px 8px #1f1f1f;
+    z-index: 12;
+    visibility: hidden;
+}
+
+.tooltip-header {
+    background: radial-gradient(#1E2428, #202A30);
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-bottom: 10px;
+    height: 10%;
+}
+
+.tooltip-stats {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 5px;
+    letter-spacing: 1px;
+    display: flex;
+    flex-direction: column;
+    border-bottom: 1px solid #2A363C;
+}
+
+.tooltip-stats h3 {
+    color: #5A6F8A;
+}
+
+.tooltip-description {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 5px;
+}
+
+.tooltip-description h3 {
+    color: #8193AB;
+}
+
+.tooltip-scaling {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 5px;
+}
+
+.tooltip-scaling .description {
+    color: #5A6F8A;
+    letter-spacing: 1px;
+}
+
+.tooltip-scaling .values {
+    color: #464D57;
+    font-weight: 700;
+}
+
+.tooltip-trivia {
+    margin-bottom: 10px;
+}
+
+.tooltip-trivia-box {
+    position: relative;
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-bottom: 10px;
+    width: 95%;
+    left: 50%;
+    transform: translateX(-50%);
+    height: fit-content;
+    background: #0C1316;
+}
+
+.tooltip-trivia-box h3 {
+    font-size: 14px;
+    font-style: italic;
+    color: #33414C;
+}
+
+.tooltip-whitespace {
+    height: 10px;
+}
+
+/* Talent Tree */
+
+.talent-tree {
+    position: absolute;
+    top: 100%;
+    left: 1;
+    min-width: 600px;
+    margin-top: 7%;
+    height: fit-content;
+    border: 2px solid black;
+    background: url(/ressources/images/heropages/talent_tree.svg) center no-repeat;
+    visibility: hidden;
+    border-radius: 8px;
+}
+
+.talent-tree-entry {
+    padding-top: 2%;
+    padding-bottom: 2%;
+    display: grid;
+    grid-template-columns: 40% 20% 40%;
+    align-items: center;
+    justify-content: center;
+    background: radial-gradient(#111315, #20262C);
+    opacity: 0.9;
+}
+
+.talent-tree-entry span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.talent-tree img {
+    height: 50px;
+    width: 50px;
+}
+
+
+
+
+@keyframes tooltip-appear {
+    from {
+      opacity: 0;
+    }
+  
+    to {
+      opacity: 1;
+    }
+  }
+
+
+
+
+/* Attributes and Stats */
+
+.attributes-stats-container {
+    position: absolute;
+    height: 80%;
+    width: 33%;
+    right: 0;
+    top: 30px;
+    padding-right: 5%;
+}
+
+.attributes-stats-headline {
+    text-align: center;
+}
+
+
+.attributes-stats-icons-container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: right;
+    justify-content: space-between;
+    width: 100%;
+    height: auto;
+    padding-top: 3%;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+/* Attributes */
+
+.attributes-icons-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 160px;
+    align-items: center;
+    padding-top: 10px;
+}
+
+.strength {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.agility {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.intelligence {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.attributes-icons-container img {
+    padding-right: 25px;
+
+}
+
+.attributes-icons-container mark {
+    color: #26E030;
+    outline: 0;
+    outline-color: transparent;
+    outline-style: none;
+    background: none;
+}
+
+/* Stats */
+
+.stats-icons-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 160px;
+    align-items: center;
+    padding-top: 10px;
+    width: auto;
+    align-items: flex-start;
+}
+
+.attack-damage {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.armor {
+    float: left;
+    left: 0;
+    padding-right: 20px;
+    display: flex;
+}
+
+.movement-speed {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.stats-icons-container img {
+    padding-right: 25px;
+}
+
+/* Win Rate and Pick Rate */
+.win-rate-pick-rate-container {
+    display: grid;
+    grid-template-columns: 1fr 5% 1fr;
+    grid-auto-flow: column;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 7%;
+
+    /*
+    left: 50%;
+    top: 185%;
+    transform: translate(-50%, -50%);
+    */
+    /*
+    background: linear-gradient(to left, #1B1C21, #232329);
+    border: 1px solid #335C31;
+    */
+    width: 75%;
+    height: 500px;
+    border-radius: 10px;
+    z-index: 5;
+}
+
+.win-rate-container {
+    background: linear-gradient(to left, #1B1C21, #232329);
+    border: 2px solid #335C31;
+    border-radius: 10px;
+    box-shadow: 10px 10px 8px #1f1f1f;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pick-rate-container {
+    background: linear-gradient(to left, #1B1C21, #232329);
+    border: 2px solid #335C31;
+    border-radius: 10px;
+    box-shadow: 10px 10px 8px #1f1f1f;
+}
+
+.circle-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.circle-container .percent {
+    position: relative;
+    width: 420px;
+    height: 420px;
+}
+
+.circle-container .percent svg {
+    position: relative;
+    width: 420px;
+    height: 420px;
+}
+
+.circle-container .percent svg circle {
+    fill: none;
+    stroke-width: 10;
+    stroke: #000;
+    transform: translate(5px, 5px);
+    stroke-dasharray: 1260;
+    stroke-dashoffset: 1260;
+    stroke-linecap: round;
+}
+
+.circle-container .percent svg circle:nth-child(1) {
+    stroke-dashoffset: 0;
+    stroke: #555555;
+}
+
+/* Win Rate Circle */
+.win-rate-container .circle-container .percent svg circle:nth-child(2) {
+    /* This offset is calc as: parent offset - (parent offset * percentage) / 100  */
+    stroke-dashoffset: calc(1260 - (1260 * 57) / 100);
+    stroke: #26E030;
+}
+
+/* Pick rate circle*/
+.pick-rate-container .circle-container .percent svg circle:nth-child(2) {
+    /* This offset is calc as: parent offset - (parent offset * percentage) / 100  */
+    stroke-dashoffset: calc(1260 - (1260 * 15) / 100);
+    stroke: #26E030;
+}
+
+
+.circle-container .percent .number {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10px;
+}
+
+.circle-container .percent .number h2 {
+    font-size: 60px;
+}
+
+.circle-container .percent .number h2 span {
+    font-size: 30px;
+}
+
+.circle-container .text {
+    padding: 10px 0 0;
+    letter-spacing: 1px;
+
+}
+
+/* Scroll Option Bar */
+
+.scroll-option-bar {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 7%;
+    width: fit-content;
+    height: fit-content;
+    z-index: 10;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.scroll-option-bar a {
+    padding: 10px 20px;
+    position: relative;
+    box-sizing: border-box;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.scroll-option-bar .animation-scroll {
+    position: absolute;
+    height: 10%;
+    bottom: 0;
+    background: #335C31;
+    border-radius: 8px;
+    transition: all .5s ease 0s;
+}
+
+a:nth-child(1) {
+    width: 125px;
+}
+
+.scroll-option-bar .start-matchups, a:nth-child(1):hover~.animation-scroll {
+    width: 125px;
+    left: 0;
+}
+
+a:nth-child(2) {
+    width: 125px;
+}
+
+.scroll-option-bar .start-benchmarks, a:nth-child(2):hover~.animation-scroll {
+    width: 125px;
+    left: 125px;
+}
+
+a:nth-child(3) {
+    width: 125px;
+}
+
+.scroll-option-bar .start-allies, a:nth-child(3):hover~.animation-scroll {
+    width: 125px;
+    left: 250px;
+}
+
+a:nth-child(4) {
+    width: 125px;
+}
+
+.scroll-option-bar .start-allies, a:nth-child(4):hover~.animation-scroll {
+    width: 125px;
+    left: 375px;
+}
+
+/* Matchup Table */
+
+.matchup-table-container {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 1%;
+    background: linear-gradient(to left, #1B1C21, #232329);
+    border-right: 2px solid #335C31;
+    border-left: 2px solid #335C31;
+    border-bottom: 2px solid #335C31;
+    width: 75%;
+    height: fit-content;
+    z-index: 10;
+    
+}
+
+.matchup-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 16px;
+    color: #e6e7eb;
+    font-family: "Myriad Pro";
+}
+
+.matchup-table thead tr {
+    background: #335C31;
+    text-align: left;
+    font-weight: bold;
+    border: none;
+}
+
+.matchup-table th {
+    cursor: pointer;
+}
+
+.matchup-table .th-sort-asc::after, .matchup-table .th-sort-desc::after {
+    margin-left: 5px;
+}
+
+.matchup-table .th-sort-asc, .matchup-table .th-sort-desc {
+    background: #579e54;
+}
+
+.matchup-table th, td {
+    padding: 12px 15px;
+}
+
+.th-header {
+    width: 45%;
+}
+
+.matchup-table tbody tr {
+    border-bottom: 1px solid #335C31;
+}
+
+/* Every second row, make them look a little darker / lighter */
+.matchup-table tbody tr:nth-of-type(even) {
+    background-color: #232329;
+}
+
+.table-cell-img {
+    height: 100px;
+    width: auto;
+}
+
+.heroRow {
+    display: table;
+    vertical-align: middle;
+}
+
+.heroRow img {
+    vertical-align: middle;
+    padding-left: 5px;
+    padding-right: 20px;
+    cursor: pointer;
+}
+
+.heroRow a {
+    text-decoration: none;
+    color: #e6e7eb;
+}
+
+.matchup-table .progress-bar {
+    margin-top: 2%;
+    height: 4px;
+    background-color: rgb(85, 85, 85);
+    width: 100%;
+}
+
+.matchup-table .filled-progress-bar {
+    height: 4px;
+    transform: translateY(-4px);
+    background-color: #579e54;
+    z-index: 100;
+}
+
+
+/* ANIMATIONS */
+
+/* Smoke animation in background until Table*/
+
+.smoke {
+    position: absolute;
+    /* Aiming for this smoke animation to stop after the Win-Rate and Pick Rate circles */
+    height: 200vh;
+    width: 100%;
+}
+
+.smoke-container {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.smoke-img {
+    position: absolute;
+    height: 100%;
+    width: 300vw;
+    z-index: 2;
+}
+
+.smoke-img-1 {
+    background: url(/ressources/images/heropages/smoke-1.png);
+    background-repeat: repeat-x;
+    background-size: contain;
+    background-position: center;
+    animation: marquee 60 linear infinite;
+}
+
+
+.smoke-img-2 {
+    background: url(/ressources/images/heropages/smoke-2.png);
+    background-repeat: repeat-x;
+    background-size: contain;
+    background-position: center;
+    animation: marquee 60s linear infinite;
+}
+
+
+
+@keyframes marquee {
+    0% {
+        transform: translate3d(0,0,0);
+    }
+
+    100% {
+        transform: translate3d(-100vw, 0, 0);
+    }
+}
+
+
+
+
+
+    
+
+
